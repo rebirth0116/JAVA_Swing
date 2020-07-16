@@ -7,14 +7,17 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class MyFrame extends JFrame{
 
 	Dimension butDim = new Dimension(100, 50);
+	Dimension txtDim = new Dimension(400, 50);
 	JPanel panel = new JPanel();
 	JButton button1 = new JButton("1");
 	JButton button2 = new JButton("2");
-//	JButton button3 = new JButton("3");
+	JButton button3 = new JButton("3");
+	JTextField text = new JTextField();
 //	JButton button4 = new JButton("4");
 //	JButton button5 = new JButton("5");
 //	JButton button6 = new JButton("6");
@@ -34,8 +37,12 @@ public class MyFrame extends JFrame{
 		add(panel);
 
 		button1.setPreferredSize(butDim);
+		button2.setPreferredSize(butDim);
+		text.setPreferredSize(txtDim);
+		panel.add(text);
 		panel.add(button1);
 		panel.add(button2);
+		panel.add(button3);
 		setVisible(true);
 		
 	}
