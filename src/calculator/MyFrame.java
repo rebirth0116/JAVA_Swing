@@ -35,8 +35,8 @@ public class MyFrame extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 사용이유 : X버튼을 누르면 프레임은 닫히지만 프로그램은 종료되지 않아서 프로그램도 종료하기 위해 사용
 		add(panel);
-
 		button1.setPreferredSize(butDim);
+		button1.setLocation(500, 500);
 		button2.setPreferredSize(butDim);
 		text.setPreferredSize(txtDim);
 		panel.add(text);
